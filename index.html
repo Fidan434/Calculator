@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lightmode.css" id="theme">
+   
+    <title>My Calculator</title>
+</head>
+
+<body>
+   
+    <div class="container">
+        <h2>Calculator</h2>
+        <table id="calculator">
+            <tr>
+                <td colspan="3"><input type="text" id="result" placeholder="Result"></td>
+                
+                <td><input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+
+            </tr>
+            <tr>
+               
+                <td> <input type="button" value="1" onclick="display('1')" /> </td>
+                <td> <input type="button" value="2" onclick="display('2')" /> </td>
+                <td> <input type="button" value="3" onclick="display('3')" /> </td>
+                <td> <input type="button" value="+" onclick="display('+')" /> </td>
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="4" onclick="display('4')" /> </td>
+                <td> <input type="button" value="5" onclick="display('5')" /> </td>
+                <td> <input type="button" value="6" onclick="display('6')" /> </td>
+                <td> <input type="button" value="-" onclick="display('-')" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="7" onclick="display('7')" /> </td>
+                <td> <input type="button" value="8" onclick="display('8')" /> </td>
+                <td> <input type="button" value="9" onclick="display('9')" /> </td>
+                <td> <input type="button" value="&times;" onclick="display('*')" /> </td>
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="/" onclick="display('/')" /> </td>
+                <td> <input type="button" value="0" onclick="display('0')" /> </td>
+                <td> <input type="button" value="." onclick="display('.')" /> </td>
+
+                <!-- calculate() function evaluates the mathematical expression -->
+                <td> <input type="button" value="=" onclick="calculate()" /> </td>
+
+
+            </tr>
+       
+
+        </table>
+         <div class="bottom-buttons">
+            <button>
+                <i class="fab fa-github" style="background-color: rgb(31, 31, 31);"></i>
+                <a href="#">GitHub</a>
+            </button>
+            <button onclick="switchTheme()" id="darkmode">
+                Dark Mode 🌙
+            </button>
+        </div>
+
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js" async defer></script>
+</body>
+
+</html>
